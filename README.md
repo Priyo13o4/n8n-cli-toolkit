@@ -264,6 +264,9 @@ This toolkit is designed to work seamlessly with GitHub Copilot in VS Code!
 
 ---
 
+**MCP is not yet supported, If someone can do it , feel free to add a request.
+Heres a path planned by AI : **
+
 ## 🔧 Converting to MCP Server
 
 ### What is MCP?
@@ -283,8 +286,9 @@ This toolkit is designed to work seamlessly with GitHub Copilot in VS Code!
 - ❌ No structured tool definitions
 - ❌ Can't be used by GitHub Copilot as tools
 - ❌ Manual command execution only
+- 
 
-### Converting to MCP Server
+### Converting to MCP Server 
 
 An **MCP server** would allow GitHub Copilot and other AI assistants to directly call these functions as tools!
 
