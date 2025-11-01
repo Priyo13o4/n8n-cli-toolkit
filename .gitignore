@@ -1,0 +1,13 @@
+# Sensitive configuration files
+.env
+.n8n-api-config
+/workflows/
+# Exported catalogs (can be large)
+*catalog.json
+*_catalog.json
+complete_*.json
+
+# Temporary files
+*.tmp
+/tmp/
+.DS_Store
