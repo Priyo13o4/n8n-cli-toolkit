@@ -1,0 +1,40 @@
+{
+  "name": "n8n-unified-mcp",
+  "version": "1.0.0",
+  "description": "Unified MCP server combining n8n-mcp documentation tools with workflow management",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "rebuild-db": "npm run build && node dist/scripts/rebuild-db.js",
+    "rebuild-db:version": "npm run build && node dist/scripts/rebuild-db.js",
+    "test": "node test-setup.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@n8n/n8n-nodes-langchain": "^2.2.1",
+    "better-sqlite3": "^12.5.0",
+    "dotenv": "^16.4.7",
+    "n8n-core": "^2.2.1",
+    "n8n-nodes-base": "^2.2.1",
+    "n8n-workflow": "^2.2.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "n8n",
+    "mcp",
+    "model-context-protocol",
+    "workflow",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT"
+}

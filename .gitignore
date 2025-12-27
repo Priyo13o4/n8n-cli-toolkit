@@ -1,13 +1,45 @@
 # Sensitive configuration files
 .env
 .n8n-api-config
-/workflows/
-# Exported catalogs (can be large)
+.env.local
+mcp-server/.env
+
+# Exported catalogs (can be very large - 900MB+)
 *catalog.json
 *_catalog.json
 complete_*.json
 
+# Databases (generated locally, can be rebuilt)
+*.db
+mcp-server/data/
+n8n-mcp/data/nodes.db
+
+# Build outputs
+dist/
+*.d.ts
+
+# Dependencies
+node_modules/
+package-lock.json
+
 # Temporary files
 *.tmp
 /tmp/
+*.log
+
+# IDE
+.vscode/settings.local.json
+.idea/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Test outputs
+coverage/
+.nyc_output/
+
+# Development
+*.swp
+*.swo
+*~
